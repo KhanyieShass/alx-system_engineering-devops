@@ -1,2 +1,2 @@
-#!/bin/bash
-! :mime Holberton
+0 string SchoolData
+>8 byte 0xXX 0xYY
