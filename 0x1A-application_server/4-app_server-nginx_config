@@ -1,4 +1,9 @@
-#!/usr/bin/env bash
-# Gracefully reloads Gunicorn.
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
 
-ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
+        location / {
+                root /var/www/html/;
+                try_files $uri $uri/ =404;
+		   {
+        }
